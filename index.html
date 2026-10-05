@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="MOVIES!.png" alt="Movie logo" onerror="this.onerror=null;this.src='logo.svg';">
+    </div>
+
+    <div class="controls">
+        <input id="inp" type="search" placeholder="Search your movie" aria-label="Enter your movie name">
+        <button type="button">Search</button>
+        <select id="type-filter" aria-label="Filter by type">
+            <option value="all">All</option>
+            <option value="romance">❤️ Romantika</option>
+            <option value="horror">😱 Qo'rqinchli (Horror)</option>
+            <option value="comedy">😂 Komediya (Comedy)</option>
+            <option value="action">🔫 Jangari (Action)</option>
+            <option value="thriller">😨 Triller (Thriller)</option>
+            <option value="mystery">🕵️ Detektiv (Mystery)</option>
+            <option value="sci-fi">👽 Fantastika (Sci-Fi)</option>
+            <option value="fantasy">🧙 Fantasy</option>
+            <option value="drama">🎭 Drama</option>
+            <option value="superhero">🦸 Superqahramon</option>
+            <option value="adventure">💥 Sarguzasht</option>
+            <option value="zombie">🧟 Zombi</option>
+            <option value="crime">🎬 Kriminal</option>
+            <option value="psychological">🧠 Psixologik</option>
+            <option value="war">🪖 Urush</option>
+            <option value="family">👨‍👩‍👧 Oilaviy</option>
+            <option value="sports">🏀 Sport</option>
+            <option value="racing">🏎️ Poyga</option>
+            <option value="cyberpunk">🤖 Cyberpunk</option>
+            <option value="post-apocalyptic">☢️ Post-apokaliptik</option>
+        </select>
+
+        <select id="sort-order" aria-label="Sort Movie">
+            <option value="">Sort</option>
+            <option value="name">Sort by name</option>
+            <option value="number">Sort by year</option>
+            <option value="18plus">🔞 18+</option>
+            <option value="6plus">👦 6+</option>
+            <option value="3plus">👶 3+</option>
+        </select>
+    </div>
+
+    <div id="movie-list" class="movie-list" aria-live="polite"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
